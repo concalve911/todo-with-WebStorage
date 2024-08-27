@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.799);
+  color: #fff;
+  padding-top: 150px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.todo__inner {
+  background-color: #bfbfbf;
+  padding: 20px;
+  border-radius: 60px;
+}
+
+.todo__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.todo__form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.todo__input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 10px;
+}
+
+.todo__submit {
+  padding: 10px;
+  background-color: #a7a7a7;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.todo__submit:hover {
+  background-color: #34fa76;
+}
+
+.todo__list {
+  width: 100%;
+}
+
+.todo__list-item {
+  font-size: 12px;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo__btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.todo__btn {
+  background-color: #a7a7a7;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.todo__btn--complete:hover {
+  background-color: #34fa76;
+}
+
+.todo__btn--delete:hover {
+  background-color: #c0392b;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
